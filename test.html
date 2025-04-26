@@ -174,19 +174,49 @@
       100% { transform: translateY(-50%) translateX(0); }
     }
 
-    /* --------- RESPONSIVE pour mobiles --------- */
-    @media (max-width: 768px) {
-      .bulle-image, .bulle-image-right {
-        width: 150px;
-        height: 150px;
-      }
-      .bulle-image {
-        left: -180px;
-      }
-      .bulle-image-right {
-        right: -180px;
-      }
-    }
+ /* --------- RESPONSIVE DESIGN --------- */
+@media screen and (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+    padding: 10px 0;
+  }
+
+  nav a {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px;
+    font-size: 0.9em;
+  }
+
+  .parallax .content {
+    padding: 30px 20px;
+    font-size: 0.9em;
+  }
+
+  .parallax {
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .bulle-image,
+  .bulle-image-right {
+    width: 100px;
+    height: 100px;
+    position: static;
+    display: block;
+    margin: 20px auto;
+    transform: none;
+  }
+
+  .menu-group {
+    text-align: center;
+  }
+}
+
   </style>
 </head>
 
